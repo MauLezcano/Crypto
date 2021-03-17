@@ -1,6 +1,9 @@
+*{
+  cursor: default;
+}
+
 *::selection{
   background: none;
-  cursor: default;
 }
 
 body{
@@ -15,10 +18,11 @@ body{
 h1{
   color: #fff;
   text-align: center;
-  background: rgba(255, 255, 255, 0.3);
+  /* background: rgba(0, 0, 0, 0.3); */
   padding: 5px 0px;
-  text-shadow: 0px 0px 20px black;
+  text-shadow: 0px 0px 20px #fff;
   margin-top: 50px;
+  font-size: 32px;
 }
 
 a{
@@ -34,7 +38,7 @@ a{
   margin: 10px 0px;
   justify-items: center;
   overflow-x: hidden;
-  padding: 25px;
+  padding: 35px 0px;
 }
 
 .card{
