@@ -1,3 +1,8 @@
+*::selection{
+  background: none;
+  cursor: default;
+}
+
 body{
   background-image: url("./Images/bgimg.jpg");
   background-repeat: no-repeat;
@@ -17,7 +22,9 @@ h1{
 .cards{
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
-  grid-gap: 20px;
+  grid-row-gap: 36px;
+  padding-left: 18px;
+  margin: 0;
 }
 
 .card{
@@ -31,10 +38,11 @@ h1{
 }
 
 .card:hover{
-  box-shadow: 3px 3px 10px white;
+  box-shadow: 0px 0px 30px magenta;
+  cursor: pointer;
 }
 
 .card p{
   text-shadow: 2px 2px 5px purple;
-  font-size: 20px;
+  font-size: 24px;
 }
