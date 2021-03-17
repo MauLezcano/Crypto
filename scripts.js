@@ -1,19 +1,24 @@
 var cardsDiv = document.getElementsByClassName("cards")[0];
 
-function createCard(name, colorHEX){
-  let x = document.createElement("DIV");
-  let y = document.createElement("P");
-  y.innerHTML = name;
-  x.style.backgroundColor = colorHEX;
+let color = "black";
+
+function createCard(name, colorHEX, link){
+  let x = document.createElement("A");
+  let y = document.createElement("DIV");
+  let z = document.createElement("P");
+  z.innerHTML = name;
+  y.style.backgroundColor = color;
+  y.className = "card";
+  y.appendChild(z);
   x.appendChild(y);
-  x.className = "card";
+  x.href = link;
+  x.target = "_blank";
   cardsDiv.appendChild(x);
 }
 
-createCard("FaucetPay", "#1d83cc");
-createCard("FaucetCrypto", "purple");
-createCard("FireFaucet", "gray");
-createCard("AutoFaucet", "yellow");
-createCard("AllCoins", "red");
-createCard("FreeTron", "red");
-createCard("Example", "green");
+createCard("FaucetPay", "black", "https://faucetpay.io/?r=1422036");
+createCard("FaucetCrypto", "white", "https://faucetcrypto.com/ref/924412");
+createCard("FireFaucet", "white", "https://firefaucet.win/ref/MauLzH");
+createCard("AutoFaucet", "white", "https://firefaucet.win/ref/MauLzH");
+createCard("AllCoins", "white", "https://allcoins.pw/?ref=464860");
+createCard("FreeTron", "white", "https://free-tron.com/?ref=180038");
